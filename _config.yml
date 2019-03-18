@@ -10,7 +10,7 @@ background:         'assets/img/placeholder-big-v1.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             zh_CN 
 
-url:                https://shengnoah.github.io/yqfynet                
+url:                https://yqfy.net
 
 
 
