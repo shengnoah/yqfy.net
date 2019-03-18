@@ -46,21 +46,35 @@ layout: compress
             
         <section id="disqus_thread" class="animated fadeInUp">            
             <div id="container"></div>
-            <link rel="stylesheet" href="https://dn-coding-net-public-file.qbox.me/Coding-Comments/v0.0.3/default.css">
-            <script src="https://dn-coding-net-public-file.qbox.me/Coding-Comments/v0.0.3/gitment.min.js"></script>
+            <link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
+            <script src="https://jjeejj.github.io/js/gitment.js"></script>
+                   
             <script>
-                var gitment = new Gitment({
-                    owner: "{{ site.coding_comments.owner }}",
-                    repo: "{{ site.coding_comments.repo }}",
-                    oauth: {
-                        client_id: "{{ site.coding_comments.oauth.client_id }}",
-                        client_secret: "{{ site.coding_comments.oauth.client_secret }}",
-                    },
-                });
-                document.getElementById('container').appendChild(gitment.render())
-            </script>
-        </section>
+              const myTheme = {
+              render(state, instance) {
+                const container = document.createElement('div')
+                container.lang = "en-US"
+                container.className = 'gitment-container gitment-root-container'
+                container.appendChild(instance.renderHeader(state, instance))
+                container.appendChild(instance.renderEditor(state, instance))
+                container.appendChild(instance.renderComments(state, instance))
+                container.appendChild(instance.renderFooter(state, instance))
+                return container
+              },
+            }
             
+            var gitment = new Gitment({
+                owner: 'shengnoah',
+                repo: 'candylab',
+                oauth: {
+                    client_id: '5b8d25820f5ce17ae1ed',
+                    client_secret: '15925915eef5fe52fe99d9033e84c92070fe7f89',
+                },
+                theme: myTheme,
+            });
+            gitment.render('container');
+            </script>
+        </section>    
         {% endif %}       
 
         {% if page.comments and site.disqus_shortname %}
