@@ -1,0 +1,11 @@
+# Site navigation links
+
+- title: 项目
+  url: /projects/
+  
+- title: 社区
+  url: https://orchina.org
+ 
+- title: 杂货铺
+  url: http://lua.ren
+

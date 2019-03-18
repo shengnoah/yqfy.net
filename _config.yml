@@ -1,0 +1,99 @@
+# Site
+title:              糖果实验室
+bio:                'Candylab1'
+description:        "CandyLab1"
+reading_time:       true
+words_per_minute:   200
+logo:               'assets/img/logo.png'
+background:         'assets/img/placeholder-big-v1.jpg'
+#background:         'assets/img/placeholder-big.jpg'
+tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
+locale:             zh_CN 
+
+#url:               http://taylantatli.me/Moon
+#url:                https://www.candylab.net
+url:                https:///shengyang.coding.me/candylab
+#url:
+#url:                https://hrvtmv-8080-lmadtp.box.myide.io
+
+
+
+#host: 127.0.0.1
+host: 0.0.0.0
+# the preview server used. Leave as is.
+port: 8080 
+# the port where the preview is rendered. You can leave this as is unless you have other Jekyll builds using this same port that might cause conflicts. in that case, use another port such as 4006.
+
+
+
+coding_comments:
+  owner: 'shengyang'
+  repo: 'candylabcomments'
+  oauth:
+    client_id: '3fde4d036f26c93d597b39a2a6eeb0e3'
+    client_secret: 'fa949008a5af7a56e5753dc12b2f26c4adc905fe'
+    
+
+
+# Jekyll
+permalink:          /:title/
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+mathjax:            true
+sass:
+  sass_dir:         _sass
+  style:            compressed
+
+# Comments
+#disqus_shortname:   candylab
+
+# Social
+# if you don't have any of social below, comment the line.
+#google:
+  #plus:            #username
+  #analytics:
+  #verify:
+  #ad-client:
+  #ad-slot:
+#bing-verify:
+#email:
+twitter:             shengyangcandy
+#facebook:           username
+github:             shengnoah
+#stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
+#linkedin:          username
+#xing:              username
+#instagram:          username
+#lastfm:            username
+#tumblr:            username
+#pinterest:         username
+#foursquare:        username
+#steam:              username
+#dribbble:          username
+#youtube:           username
+#soundcloud:        username
+weibo:             openresty
+#flickr:            username
+#codepen:           username
+#keybase:           username
+#xmpp:              username@server.com
+#hackernews:        username
+
+# Gems
+gems:
+  - jekyll-mentions
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+
+jekyll-mentions:
+    base_url: https://github.com
+
+# Exclude list
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
