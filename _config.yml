@@ -10,11 +10,7 @@ background:         'assets/img/placeholder-big-v1.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             zh_CN 
 
-#url:               http://taylantatli.me/Moon
-#url:                https://www.candylab.net
-url:                https:///shengyang.coding.me/candylab
-#url:
-#url:                https://hrvtmv-8080-lmadtp.box.myide.io
+url:                https://shengnoah.github.io/yqfynet                
 
 
 
